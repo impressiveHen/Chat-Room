@@ -1,10 +1,10 @@
 :root {
-    --main-color: #5ea3d0;
-    --secondary-color: white;
+    --main-color: #87CEFA;
+    --secondary-color: 	white;
     --main-text-color: #3e5869;
-    --secondary-text-color: #b0c7d6;
+    --secondary-text-color: #800000;
     --send-message-form: #F5F5F5;
-    --current-text-color: #ff9933;
+    --current-text-color: #FF4500;
 }
 
 html, body {
@@ -79,7 +79,6 @@ html, body {
     color: var(--secondary-text-color);
     font-weight: 600;
     text-decoration: none;
-    
  }
 
  /* select all a elements inside .room.active class which is descendent of .rooms-list class */
@@ -88,7 +87,7 @@ html, body {
     color: var(--current-text-color);
 }
 
-.new-room-form {
+.new-room-form p {
     padding: 0 5px;
     background: var(--secondary-color);
     color: var(--main-text-color);
@@ -102,7 +101,7 @@ html, body {
 }
 
 .new-room-form input {
-    width: 135px;
+    width: 200px;
     background: var(--secondary-color);
 }
 

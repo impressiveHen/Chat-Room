@@ -8,7 +8,7 @@ class RoomList extends React.Component {
         return (
             <div className="rooms-list">
                 <ul>
-                    <h3>Your rooms:</h3>
+                    <h3 style={{color: '#191970', fontWeight: 100}}>MY ROOMS:</h3>
                     {orderedRooms.map(room => {
                         const isActive = room.id === this.props.currentRoomId ? "active" : " ";
                         return (

@@ -36,7 +36,8 @@ function MessageList(props) {
                 return (
                     <Message
                         key={index}
-                        userName={message.senderId}
+                        // message.senderId is authentication Id
+                        userName={message.sender.name}
                         text={message.parts[0].payload.content}
                     />
                 )
