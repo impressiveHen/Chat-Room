@@ -6,16 +6,15 @@ import Chat from './Chat';
 
 function App() {
   const Chatkit = require('@pusher/chatkit-server');
-
+  const chatkit = new Chatkit.default({
+    instanceLocator: instanceLocator,
+    key: secretKey
+  })
+  
   const [allUser, setAllUser] = useState([]);
   const [selectId, setSelectId] = useState('ShiangHu');
 
   useEffect(() => {
-    const chatkit = new Chatkit.default({
-      instanceLocator: instanceLocator,
-      key: secretKey
-    })
-
     chatkit.getUsers()
       .then((res) => {
         // console.log(res);
@@ -29,9 +28,21 @@ function App() {
     setSelectId(id);
   }
 
+  const createNewUser = (id, name) => {
+    chatkit.createUser({
+      id: id,
+      name: name
+    }).then(() => {
+      console.log('User created successfully');
+    }).catch((err) => {
+      console.log(err);
+    });
+    handleLogin(id);
+  }
+
   return (
     <div>
-      <ModalForm allUser={allUser} handleLogin={handleLogin} />
+      <ModalForm allUser={allUser} handleLogin={handleLogin} createNewUser={createNewUser} />
       <Chat selectId={selectId} />
     </div>
   );
