@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Chat-Room/static/css/main.34de6062.chunk.css",
+    "main.js": "/Chat-Room/static/js/main.fcd1d54c.chunk.js",
+    "main.js.map": "/Chat-Room/static/js/main.fcd1d54c.chunk.js.map",
+    "runtime-main.js": "/Chat-Room/static/js/runtime-main.6e2550f1.js",
+    "runtime-main.js.map": "/Chat-Room/static/js/runtime-main.6e2550f1.js.map",
+    "static/js/2.1359d4fa.chunk.js": "/Chat-Room/static/js/2.1359d4fa.chunk.js",
+    "static/js/2.1359d4fa.chunk.js.map": "/Chat-Room/static/js/2.1359d4fa.chunk.js.map",
+    "index.html": "/Chat-Room/index.html",
+    "precache-manifest.62b6621264581c70b9d51d57ad2e7f56.js": "/Chat-Room/precache-manifest.62b6621264581c70b9d51d57ad2e7f56.js",
+    "service-worker.js": "/Chat-Room/service-worker.js",
+    "static/css/main.34de6062.chunk.css.map": "/Chat-Room/static/css/main.34de6062.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e2550f1.js",
+    "static/js/2.1359d4fa.chunk.js",
+    "static/css/main.34de6062.chunk.css",
+    "static/js/main.fcd1d54c.chunk.js"
+  ]
+}
