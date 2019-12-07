@@ -2,10 +2,12 @@
   "name": "chatapp",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://impressiveHen.github.io/Chat-Room/",
   "dependencies": {
     "@pusher/chatkit-client-react": "^0.1.2",
     "@pusher/chatkit-server": "^2.2.0",
     "bootstrap": "^4.4.1",
+    "gh-pages": "^2.1.1",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.10.2",
@@ -14,6 +16,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
